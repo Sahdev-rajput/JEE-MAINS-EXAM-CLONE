@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Html forms</title>
+</head>
+<body>
+
+
+<form action="EVS_ch1-notes_#$-@!f.pdf">
+<!-- to create forms	 -->
+<div><!--  to create blocks	 -->	
+<center><H1>Employee registration form</H1></center>
+<!-- <center> tag brings it in the center	 -->	
+<hr>
+
+
+<fieldset>
+<legend>Personal Information</legend>
+<label>First Nme: </label>
+<input type="text" name="First name" placeholder="firstname" size="10" required/><br><br>
+<!-- <input> tag is used to create textboxes	 -->														
+<label>Middle Name</label>
+<input type="text" name="Middle name" placeholder="Middlename" size="15" required/><br><br>
+<!-- placeholder is used for giving hints -->
+<label>Last Name</label>
+<input type="text" name="Last Name" placeholder="Last Name" size="15" requires/><br><br>
+<!-- size is used for textboxes and letter sizes -->
+</fieldset>
+
+<br>
+<div>
+	<label>
+		Department:
+	</label>
+
+<select> <!-- drop down list using select and option -->
+<option value="course">Department</option>
+<option value="BCA">Managememnt </option>
+<option value="BBA"> Human Resource </option>
+<option value="B.tech"> Customer suport </option>
+<option value="MBA"> Development </option>
+<option value="MCA"> Business </option>
+<option value="Mtech"> Corporate Fiance </option>
+</select>
+</div>
+
+
+<label>Gender</label>
+<br>
+
+<input type="radio" value="male" name="Gender" checked>Male<br> <!-- radio circular
+box will apperar because of type radio	 -->
+<input type="radio" value="female" name="Gender"> Female<br>
+<input type="radio" value="other" name="Gender">other<br>
+</div>
+
+<br>
+<label>
+Phone
+</label>
+<input type="text" name="country-code" placeholder="country code" value="+91" size="2"/>
+<input type="tel" name="phone" size="25" pattern="[0-9]{4}-[0-9]{6}" placeholder="1234-567890" required>
+<!-- tel is used for writing phone number with well defined pattern -->
+
+<br><br>
+<textarea cols="80" rows="5" placeholder="current address" value="address" required>
+<!-- textarea is a space to write paragraph or address		 -->
+</textarea><br><br>
+
+
+<label for="my file" name="my file">Drop your resume</label>
+<input type="file" id="my file" name="my file"><br><br>
+<!-- the type file is used to attach a file from the system	 -->																							 
+
+
+<label for="email"><b> Email </b></label>
+<input type="text" placeholder="Enter Email" name="emai" required><br><br>
+<!-- type email gives you advantage of writing an email with @ and .com to be compulsory -->
+
+<label for="psw"><b>password</b></label>
+<input type="password" placeholder="Enter Passeord" name="psw" required> <!-- password type let you to write password with asterisk -->
+<br><br>
+
+<label for="psw-repeat"><b>Re-type Password</b></label>
+<input type="password" placeholder="Re-TYPE paassword" name="psw-repeat" required ><br><br>
+<button type="submit" class="registerbtn">Download</button>
+<!-- submit type is used to provide a submit button -->
+<br>
+<center><font size="5">
+<a href="file:///F:/ROOT%20TYPE/My%20WebPage.html">Click here to go to my webpage</a>
+</font></center>
+</body>
+</html>
